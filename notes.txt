@@ -1,0 +1,21 @@
+# https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+
+$python
+>>>from app import db
+>>>db.create_all()
+>>>exit()
+
+Host the app on HEROKU
+https://www.heroku.com/
+https://devcenter.heroku.com/articles/heroku-cli
+
+$ touch Procfile
+>>> web: gunicorn app:app
+$ heroku login
+$ git init
+$ git add .
+$ git commit -m "Init app"
+$ heroku create flaskpythonTodo
+$ git remote -v
+$ git push remote -v
+
